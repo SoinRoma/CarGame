@@ -132,8 +132,6 @@ table {
   height: 100px;
   background: transparent url("img/car.png") center / cover no-repeat;
   position: absolute;
-  left: 125px;
-  bottom: 10px;
 }
 
 .enemy {
@@ -145,8 +143,12 @@ table {
   height: 100%;
   position: relative;
   margin: auto;
-  background: rgb(15, 14, 14);
+  background: transparent url("img/road.jpg");
   overflow: hidden;
+}
+
+.img {
+  background: transparent url("img/ocean.jpg") center / cover no-repeat;
 }
 
 .line {
@@ -155,4 +157,46 @@ table {
   height: 50px;
   background: white;
   left: 145px;
+}
+
+.start {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  z-index: 200;
+  color: black;
+  background: transparent url("img/need.jpg") center center/ cover no-repeat;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  height: 100%;
+}
+
+.text {
+  background: white;
+  opacity: 70%;
+  padding: 2rem;
+  border: 4px solid black;
+  width: 20%;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.score {
+  position: absolute;
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 50px;
+  text-align: center;
+  z-index: 200;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 500;
 }
