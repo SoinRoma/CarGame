@@ -3,6 +3,7 @@ const start = document.querySelector(".text");
 const image = document.querySelector(".start");
 const gameArea = document.querySelector(".gameArea");
 const car = document.createElement("div");
+const maxEnemy = 5;
 
 car.classList.add("car");
 
@@ -43,11 +44,16 @@ function startGame() {
 
   for (let i = 0; i < getQuantityElementElements(100 * setting.trafic); i++) {
     const enemy = document.createElement("div");
+
+    const randomEnemy = Math.floor(Math.random() * maxEnemy) + 1;
+    console.log(enemy);
+    console.log(randomEnemy);
     enemy.classList.add("enemy");
     enemy.y = -100 * setting.trafic * (i + 1);
     enemy.style.left =
       Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + "px";
     enemy.style.top = enemy.y + "px";
+    enemy.style.background = `transparent url(./img/enemy${randomEnemy}.png) center / cover no-repeat`;
 
     gameArea.appendChild(enemy);
   }

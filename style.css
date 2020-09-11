@@ -134,10 +134,6 @@ table {
   position: absolute;
 }
 
-.enemy {
-  background: transparent url("img/enemy.png") center / cover no-repeat;
-}
-
 .gameArea {
   width: 300px;
   height: 100%;
