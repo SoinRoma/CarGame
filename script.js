@@ -4,6 +4,7 @@ const image = document.querySelector(".start");
 const gameArea = document.querySelector(".gameArea");
 const car = document.createElement("div");
 const maxEnemy = 5;
+const vAudio = document.getElementById("audioID");
 
 car.classList.add("car");
 
@@ -29,7 +30,11 @@ function getQuantityElementElements(heightElement) {
   return document.documentElement.clientHeight / heightElement + 1;
 }
 
+
 function startGame() {
+  // автовключение музыки
+  vAudio.play();
+
   start.classList.add("hide");
   image.classList.add("hide");
   gameArea.innerHTML = "";
@@ -51,7 +56,7 @@ function startGame() {
     enemy.classList.add("enemy");
     enemy.y = -100 * setting.trafic * (i + 1);
     enemy.style.left =
-      Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + "px";
+        Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + "px";
     enemy.style.top = enemy.y + "px";
     enemy.style.background = `transparent url(./img/enemy${randomEnemy}.png) center / cover no-repeat`;
 
@@ -125,16 +130,16 @@ function moveEnemy() {
     let enemyRect = item.getBoundingClientRect();
 
     if (
-      carRect.top <= enemyRect.bottom &&
-      carRect.right >= enemyRect.left &&
-      carRect.bottom >= enemyRect.top &&
-      carRect.left <= enemyRect.right
+        carRect.top <= enemyRect.bottom &&
+        carRect.right >= enemyRect.left &&
+        carRect.bottom >= enemyRect.top &&
+        carRect.left <= enemyRect.right
     ) {
       setting.start = false;
       start.classList.remove("hide");
       image.classList.remove("hide");
       document.querySelector(".text").textContent =
-        "Ваши очки: " + setting.score;
+          "Ваши очки: " + setting.score;
     }
     item.y += setting.speed / 2;
     item.style.top = item.y + "px";
@@ -142,7 +147,8 @@ function moveEnemy() {
     if (item.y >= document.documentElement.clientHeight) {
       item.y = -100 * setting.trafic * 2;
       item.style.left =
-        Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + "px";
+          Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + "px";
     }
   });
 }
+
