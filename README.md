@@ -10,3 +10,16 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3&logoColor=css3)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 ![Nodejs](https://img.shields.io/badge/-Node.Js-black?style=flat-square&logo=node.js)
+
+### Для создания декстопного приложения
+
+1. Установить зависимости
+```
+npm install
+```
+
+2. Сборка проекта (появится папка car-game-win32-x64)
+
+```
+electron-packager .
+```
