@@ -130,7 +130,7 @@ table {
 .enemy {
   width: 50px;
   height: 100px;
-  background: transparent url("../img/car.png") center / cover no-repeat;
+  background: transparent url("../images/car.png") center / cover no-repeat;
   position: absolute;
 }
 
@@ -139,12 +139,12 @@ table {
   height: 100%;
   position: relative;
   margin: auto;
-  background: transparent url("../img/road.jpg");
+  background: transparent url("../images/road.jpg");
   overflow: hidden;
 }
 
 .img {
-  background: transparent url("../img/ocean.jpg") center / cover no-repeat;
+  background: transparent url("../images/bg.jpg") center / cover no-repeat;
 }
 
 .line {
@@ -164,7 +164,7 @@ table {
   text-align: center;
   z-index: 200;
   color: black;
-  background: transparent url("../img/need.jpg") center center/ cover no-repeat;
+  background: transparent url("../images/need.jpg") center center/ cover no-repeat;
   font-size: 1.5rem;
   font-family: sans-serif;
   font-weight: 700;
