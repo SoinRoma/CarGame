@@ -10,8 +10,3 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3&logoColor=css3)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 ![Nodejs](https://img.shields.io/badge/-Node.Js-black?style=flat-square&logo=node.js)
-
-### Запуск проекта
-```
-Разархивировать проект и запустить в IDE
-```
